@@ -1,0 +1,134 @@
+
+.modal-form {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    & textarea {
+        height: 120px;
+        padding: 16px;
+
+        resize: none;
+    }
+
+    & .btn {
+        display: inherit;
+        
+        width: 200px;
+        height: 50px;
+    }
+}
+
+    .input-data {
+        position: relative;
+    }
+    .input-data--margin {
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+
+        .input-data__input {
+            width: 100%;
+            height: 40px;
+            padding-left: 42px;
+
+            /* cursor: pointer; */
+
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: transparent;
+
+            transition: border-color var(--duration) var(--timing-function);
+
+            &:hover, &:focus {border-color: var(--accent-color);}
+
+            &::placeholder {
+                @media screen and (max-width:1199px) {
+                    font-size: 14px;
+                    line-height: 1.142;
+                }
+
+                color: rgba(117, 117, 117, 0.5);
+            }
+        } 
+        
+        .input-data__icon {
+            position: absolute;
+            top:50%;
+            left: 12px;
+            transform: translateY(-50%);
+
+            transition: fill var(--duration) var(--timing-function);
+
+            .input-data__input:hover + &, .input-data__input:focus + &  {fill: var(--accent-color);}
+        }
+
+    .form-agreement {
+        position: relative;
+
+        text-align: center;
+    }
+    .form-agreement--margin {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .form-agreement__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.166;
+        @include mobile {font-size: 12px;}
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.714;
+        }
+        letter-spacing: 0.03em;
+        /* text-align: center; */
+
+        color: var(--main-text-color);
+    }
+
+        .form-agreement__spanicon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 16px;
+            height: 16px;
+
+            border: 2px solid var(--title-text-color);
+            border-radius: 2px;
+
+            transition: border-color var(--duration) var(--timing-function);
+
+            .form-agreement__check:checked + .form-agreement__text & {
+                background-color: var(--accent-color);
+                border: none;
+            }
+
+            .form-agreement__check:focus + .form-agreement__text & {
+                border-color: var(--accent-color);
+            }
+        }
+
+            .form-agreement__icon {
+                fill: transparent;
+
+                .form-agreement__check:checked + .form-agreement__text & {
+                    fill: #FFFFFF;
+                }
+            }
+
+        .form-agreement__agreement {
+            color: #2196F3;
+        
+            &:focus {outline-color: var(--accent-color);}
+        }

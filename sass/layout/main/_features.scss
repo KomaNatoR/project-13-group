@@ -1,0 +1,54 @@
+    .features {
+        background-color: var(--main-sections-color);
+    }
+
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        .features-list-item {
+        
+            @include tablet {
+                width: calc((100% - 30px) / 2);
+            }
+            @include desktop {
+                width: calc((100% - 90px) / 4);
+            }            
+            &__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 120px;
+                margin-bottom: 30px;
+                border-radius: 4px;
+
+                background-color: var(--back-teamsection-color);
+            }
+            &__icon {}
+            &__title {
+                margin-bottom: 10px;
+                
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14;
+                text-transform: uppercase;
+
+                color: var(--title-text-color);
+
+                @media screen and (max-width:767px) {
+                    text-align: center;
+                }
+            }
+            &__text {
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.71;
+
+                color: var(--main-text-color);
+                }
+        }
+

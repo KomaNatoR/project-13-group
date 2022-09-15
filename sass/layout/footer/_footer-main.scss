@@ -1,0 +1,22 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--foothero-back-color);
+}
+
+.footer .container {
+    display: flex;
+
+    @media screen and (max-width:1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+    // @include tablet {column-gap: 165px;}
+    // @media screen and (max-width:1199px) {column-gap: 165px;}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {column-gap: 165px;}
+    @include desktop {align-items: baseline;}
+
+
+}

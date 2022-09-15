@@ -1,0 +1,64 @@
+    .footer-container-form {
+
+        @include desktop {margin-left: auto;}
+
+        @media screen and (max-width:1199px) {text-align: center;}
+    }
+    
+    .footer-form {
+        @include desktop {display: flex;}
+
+
+        & .btn {
+            width: 200px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            @media screen and (max-width:1199px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+        .footer-form__email {
+
+            width: calc(100vw - 30px);
+            @include mobile {width: 450px;}
+            @include desktop {
+                width: 358px;
+                margin-right: 12px;
+                padding-left: 16px;
+            }
+            height: 50px;
+
+
+            color: var(--main-sections-color);
+            background-color: transparent;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+
+            transition: border-color var(--duration) var(--timing-function);
+
+            &:hover, &:focus {
+                border-color: var(--accent-color);
+                outline: transparent;
+            }
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.25;
+
+                letter-spacing: 0.03em;
+                
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        .footer-form__icon {fill: #FFFFFF;}

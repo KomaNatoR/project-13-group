@@ -1,0 +1,41 @@
+.ourworks {
+    padding-top: 0;
+    background-color: var(--main-sections-color);
+    
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
+
+    .ourworks-list {
+        display: flex;
+        gap: 30px;
+        
+        &__img {display: block;}
+        &__item {position: relative;}
+        &__text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 70px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.143;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            background-color: rgba(47, 48, 58, 0.8);
+            
+            /* opacity: 0;
+
+            transition: opacity var(--duration) var(--timing-function); */
+        }
+    }
+            /* .ourworks-list-item:hover p {opacity: 1;} */

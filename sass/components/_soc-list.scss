@@ -1,0 +1,16 @@
+    .soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+       .soc-list__link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       .soc-list__icon {fill: currentColor;}

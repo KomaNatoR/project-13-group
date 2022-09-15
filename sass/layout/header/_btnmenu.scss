@@ -1,0 +1,31 @@
+.btnmenu {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-color: transparent;
+    background-color: #ffffff;
+
+    @include tablet {display: none;}
+}
+
+
+    .btnmenu-open {
+        margin-left: auto;
+
+        &:hover, &:focus {fill: var(--accent-color);}
+    }
+
+    .btnmenu-open__icon {
+        // display: block;
+    }
+
+    .btnmenu-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+
+        &:hover, &:focus {fill: var(--accent-color);}
+    }

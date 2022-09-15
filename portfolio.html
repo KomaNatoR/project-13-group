@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="body">
+        <!-- -===--- ГОЛОВА ---===- -->
+    <header class="header">
+    
+        <div class="container header--container">
+    
+            <a href="./index.html" class="logo noline"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+    
+            <nav class="navsite navsite--margin">
+                <ul class="navsite__list nopoint">
+                    <li class="navsite__item"><a href="./index.html" class="navsite__link noline">Студія</a></li>
+                    <li class="navsite__item"><a href="./portfolio.html" class="navsite__link noline current">Портфоліо</a></li>
+                    <li class="navsite__item"><a href="/Контакти" class="navsite__link noline">Контакти</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="contacts contacts--margin nopoint">
+                <li><a href="mailto:info@devstudio.com" class="contacts__link noline">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li><a href="tel:+380971111111" class="contacts__link noline">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38097 111 11 11</a>
+                </li>
+            </ul>
+    
+            <button type="button" class="btnmenu-open btnmenu">
+                <svg class="btnmenu-open__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-mobmenu-open"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mobmenu is-hidden">
+    
+            <button type="button" class="btnmenu-close btnmenu">
+                <svg class="btnmenu-close__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-mobmenu-close"></use>
+                </svg>
+            </button>
+    
+            <div>
+                <nav class="mobmenu-nav">
+                    <ul class="mobmenu-nav__list nopoint">
+                        <li class="mobmenu-nav__item">
+                            <a href="./index.html" class="mobmenu-nav__link noline">Студія</a>
+                        </li>
+                        <li class="mobmenu-nav__item">
+                            <a href="./portfolio.html" class="mobmenu-nav__link noline current">Портфоліо</a>
+                        </li>
+                        <li class="mobmenu-nav__item">
+                            <a href="/Контакти" class="mobmenu-nav__link noline">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div>
+                <ul class="mobmenu-contacts nopoint">
+                    <li class="mobmenu-contacts__item">
+                        <a href="tel:+380971111111" class="mobmenu-contacts__link-tel noline">
+                            +38097 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobmenu-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="mobmenu-contacts__link-mail noline">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="mobmenu-soc nopoint">
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Instagram</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Twitter</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Facebook</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Linkedin</a></li>
+                </ul>
+    
+            </div>
+        </div>
+    
+    </header>
+        <!-- -===--- ТІЛО ---===- -->
+    <main class="section">
+        <div class="container">
+
+            <section class="port">
+
+                <h1 class="hidden">Портфоліо</h1>
+
+                <ul class="btn-list nopoint">
+                    <li><button type="button" class="btn-list__btn">Все</button>
+                    <li><button type="button" class="btn-list__btn">Веб-сайти</button>
+                    <li><button type="button" class="btn-list__btn">Додатки</button>
+                    <li><button type="button" class="btn-list__btn">Дизайн</button>
+                    <li><button type="button" class="btn-list__btn">Маркетинг</button>
+                </ul>
+
+                <ul class="select-list nopoint">
+
+                    <li class="port-card">
+                        <a href="" class="noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/tehnokrak.jpg 1x,
+                                            ./images/tehnokrak-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/tehnokrak-tab.jpg 1x,
+                                            ./images/tehnokrak-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/tehnokrak-mob.jpg 1x,
+                                            ./images/tehnokrak-mob-2x.jpg 2x">
+                                    <img src="./images/tehnokrak-mob.jpg" alt="технокряк">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Технокряк</h3>
+                                <p class="port-card__bottom-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/poster.jpg 1x,
+                                            ./images/poster-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/poster-tab.jpg 1x,
+                                            ./images/poster-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/poster-mob.jpg 1x,
+                                            ./images/poster-mob-2x.jpg 2x">
+                                    <img src="./images/poster-mob.jpg" alt="постер">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Постер New Orlean vs Golden Star</h3>
+                                <p class="port-card__bottom-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/seafood.jpg 1x,
+                                            ./images/seafood-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/seafood-tab.jpg 1x,
+                                            ./images/seafood-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/seafood-mob.jpg 1x,
+                                            ./images/seafood-mob-2x.jpg 2x">
+                                    <img src="./images/seafood-mob.jpg" alt="ресторан сіафуд">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Ресторан Seafood</h3>
+                                <p class="port-card__bottom-text">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/prime.jpg 1x,
+                                            ./images/prime-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/prime-tab.jpg 1x,
+                                            ./images/prime-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/prime-mob.jpg 1x,
+                                            ./images/prime-mob-2x.jpg 2x">
+                                    <img src="./images/prime-mob.jpg" alt="проект прайм">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Проект Prime</h3>
+                                <p class="port-card__bottom-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li  class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/boxes.jpg 1x,
+                                            ./images/boxes-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/boxes-tab.jpg 1x,
+                                            ./images/boxes-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/boxes-mob.jpg 1x,
+                                            ./images/boxes-mob-2x.jpg 2x">
+                                    <img src="./images/boxes-mob.jpg" alt="порект боксес">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Проект Boxes</h3>
+                                <p class="port-card__bottom-text">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/noborders.jpg 1x,
+                                            ./images/noborders-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/noborders-tab.jpg 1x,
+                                            ./images/noborders-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/noborders-mob.jpg 1x,
+                                            ./images/noborders-mob-2x.jpg 2x">
+                                    <img src="./images/noborders-mob.jpg" alt="ноубордерс">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Inspiration has no Borders</h3>
+                                <p class="port-card__bottom-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/limited.jpg 1x,
+                                            ./images/limited-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/limited-tab.jpg 1x,
+                                            ./images/limited-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/limited-mob.jpg 1x,
+                                            ./images/limited-mob-2x.jpg 2x">
+                                    <img src="./images/limited-mob.jpg" alt="видання лімітед">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Видання Limited Edition</h3>
+                                <p class="port-card__bottom-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/lab.jpg 1x,
+                                            ./images/lab-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/lab-tab.jpg 1x,
+                                            ./images/lab-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/lab-mob.jpg 1x,
+                                            ./images/lab-mob-2x.jpg 2x">
+                                    <img src="./images/lab-mob.jpg" alt="проект лаб">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопака. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Проект LAB</h3>
+                                <p class="port-card__bottom-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="port-card">
+                        <a href="" class="select-list-link noline">
+                            <div class="port-card__top">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                    srcset="./images/growing.jpg 1x,
+                                            ./images/growing-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                    srcset="./images/growing-tab.jpg 1x,
+                                            ./images/growing-tab-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                    srcset="./images/growing-mob.jpg 1x,
+                                            ./images/growing-mob-2x.jpg 2x">
+                                    <img src="./images/growing-mob.jpg" alt="гровінг бізнес">
+                                </picture>
+                                <p class="port-card__top-text">Сірожка мєга-крутий хлопчина. Накачаний, сімпатічьний,
+                                    а жарти то взагалі капєц які смішні, один смішніше другого!
+                                    Щей на програміста пішов! Ну чим не ідеальний женіх!</p>
+                            </div>
+
+                            <div class="port-card__bottom">
+                                <h3 class="port-card__bottom-title">Growing Business</h3>
+                                <p class="port-card__bottom-text">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+        <!-- -===--- НОГИ ---===- -->
+    <footer class="footer">
+        <div class="container">
+    
+            <div class="footer-contacts">
+    
+                <a href="./index.html" class="logo noline"><span class="logo__web">Web</span><span>Studio</span></a>
+    
+                <address class="address address-margin">
+    
+                    <p>м. Київ, пр-т Лесі Українки, 26</p>
+    
+                    <ul class="address__list nopoint">
+                        <li class="address__item"><a href="mailto:info@devstudio.com"
+                                class="address__link noline">info@devstudio.com</a></li>
+                        <li class="address__item"><a href="tel:+380971111111" class="address__link noline">+38097 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="footer-soc">
+    
+                <h3 class="footer-title">Приєднуйтесь</h3>
+    
+                <ul class="soc-list nopoint">
+                    <li><a href="" class="soc-list__link footer-soc--color">
+                            <svg class="soc-list__icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="" class="soc-list__link footer-soc--color">
+                            <svg class="soc-list__icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="" class="soc-list__link footer-soc--color">
+                            <svg class="soc-list__icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li><a href="" class="soc-list__link footer-soc--color">
+                            <svg class="soc-list__icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-container-form">
+                <h3 class="footer-title">Підпишіться на розсилку</h3>
+    
+                <form class="footer-form">
+                    <input type="email" name="email" placeholder="E-mail" class="footer-form__email">
+    
+                    <button type="submit" class="btn">
+                        Підпсатися
+                        <svg class="footer-form__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-telega"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+
+</body>
+</html>

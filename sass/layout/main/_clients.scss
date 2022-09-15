@@ -1,0 +1,45 @@
+.clients {
+    background-color: var(--main-sections-color);
+
+}
+
+    .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+
+    .clients-list-item {
+        width: calc((100% - 30px) / 2);
+        @include tablet {
+            width: calc((100% - 60px) / 3);
+        }
+        @include desktop {
+            width: calc((100% - 150px) / 6);
+        }
+    }
+
+        .clients-list-item__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 92px;            
+
+            border: 1px solid var(--main-icons-color);
+            border-radius: 4px;
+
+            color: var(--main-icons-color);
+
+            transition: border-color var(--duration) var(--timing-function), 
+                color var(--duration) var(--timing-function),
+                outline-color var(--duration) var(--timing-function);
+
+            &:hover, &:focus {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            outline-color: var(--accent-color);
+            }
+        }
+            .clients-list-item__icon {fill: currentColor;}

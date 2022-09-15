@@ -1,0 +1,14 @@
+    .header {
+        letter-spacing: 0.02em;
+
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .header--container {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 767px) {padding: 10px 15px;}
+
+    }

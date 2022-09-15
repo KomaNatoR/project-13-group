@@ -1,0 +1,49 @@
+.btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+
+    margin-bottom: 40px;
+
+    @media screen and (max-width:767px) {
+        row-gap: 15px;
+        max-width: 326px;
+    }
+    @include tablet {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+
+    .btn-list__btn {
+        cursor: pointer;
+        padding: 6px 22px;
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        background-color: #F5F4FA;
+        color: var(--title-text-color);
+
+        border: 0;
+        border-radius: 4px;
+
+        transition: 
+            background-color var(--duration) var(--timing-function), 
+            color var(--duration) var(--timing-function), 
+            box-shadow var(--duration) var(--timing-function);
+
+        &:hover, &:focus {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
